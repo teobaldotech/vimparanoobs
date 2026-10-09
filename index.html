@@ -1,763 +1,704 @@
-<!DOCTYPE HTML>
-<html lang="pt" >
-    
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Introdução | Vim para Noobs</title>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Sinta-se Hackudo usando esse super editor!">
-        <meta name="generator" content="GitBook 2.6.7">
-        
-        
-        <meta name="HandheldFriendly" content="true"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
-        
-    <link rel="stylesheet" href="gitbook/style.css">
-    
-        
-        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-disqus/plugin.css">
-        
-    
-        
-        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
-        
-    
-        
-        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
-        
-    
-        
-        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
-        
-    
-    
 
-        
-    
-    
-    <link rel="next" href="./chapters/inicio.html" />
-    
-    
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Guia interativo Vim para Noobs.">
+  <title>Vim para Noobs PRO ULTRA</title>
 
-        
-    </head>
-    <body>
-        
-        
-    <div class="book"
-        data-level="0"
-        data-chapter-title="Introdução"
-        data-filepath="intro.md"
-        data-basepath="."
-        data-revision="Sat Feb 06 2016 11:29:39 GMT-0200 (BRST)"
-        data-innerlanguage="">
-    
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #131c30;
+      --surface: #1d2941;
+      --text: #edf2ff;
+      --muted: #a8b5cc;
+      --accent: #a78bfa;
+      --border: #34415b;
+      --success: #34d399;
+    }
 
-<div class="book-summary">
-    <nav role="navigation">
-        <ul class="summary">
-            
-            
-            
-            
+    [data-theme="light"] {
+      color-scheme: light;
+      --bg: #f4f6fb;
+      --panel: #fff;
+      --surface: #e9eef8;
+      --text: #182238;
+      --muted: #526079;
+      --accent: #6d28d9;
+      --border: #d4dceb;
+      --success: #047857;
+    }
 
-            
+    * { box-sizing: border-box; }
 
-            
-    
-        <li class="chapter active" data-level="0" data-path="index.html">
-            
-                
-                    <a href="./index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                        Introdução
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1" data-path="chapters/inicio.html">
-            
-                
-                    <a href="./chapters/inicio.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.</b>
-                        
-                        Primeiros passos com o Vim
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2" data-path="chapters/instalacao.html">
-            
-                
-                    <a href="./chapters/instalacao.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.</b>
-                        
-                        Instalando o Vim
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3" data-path="chapters/modos.html">
-            
-                
-                    <a href="./chapters/modos.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.</b>
-                        
-                        Modos de operação
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4" data-path="chapters/comandos.html">
-            
-                
-                    <a href="./chapters/comandos.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.</b>
-                        
-                        Formando comandos
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="5" data-path="chapters/abrindo-um-arquivo.html">
-            
-                
-                    <a href="./chapters/abrindo-um-arquivo.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.</b>
-                        
-                        Abrindo um arquivo
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6" data-path="chapters/alternando-entre-arquivos.html">
-            
-                
-                    <a href="./chapters/alternando-entre-arquivos.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.</b>
-                        
-                        Alternando entre arquivos
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="7" data-path="chapters/movendo-o-cursor.html">
-            
-                
-                    <a href="./chapters/movendo-o-cursor.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.</b>
-                        
-                        Se movimentando pelo texto
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8" data-path="chapters/inserindo-texto.html">
-            
-                
-                    <a href="./chapters/inserindo-texto.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.</b>
-                        
-                        Inserindo texto
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="9" data-path="chapters/comandos-para-deletar.html">
-            
-                
-                    <a href="./chapters/comandos-para-deletar.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.</b>
-                        
-                        Deletando texto
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="10" data-path="chapters/copiar-e-colar.html">
-            
-                
-                    <a href="./chapters/copiar-e-colar.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>10.</b>
-                        
-                        Copiar e colar
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="11" data-path="chapters/recortar-e-colar.html">
-            
-                
-                    <a href="./chapters/recortar-e-colar.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>11.</b>
-                        
-                        Recortar e colar
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="12" data-path="chapters/copiar-para-o-clipboard.html">
-            
-                
-                    <a href="./chapters/copiar-para-o-clipboard.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>12.</b>
-                        
-                        Copiar para o clipboard
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="13" data-path="chapters/substituir-replace.html">
-            
-                
-                    <a href="./chapters/substituir-replace.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>13.</b>
-                        
-                        Replace
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="14" data-path="chapters/desfazendo-as-coisas.html">
-            
-                
-                    <a href="./chapters/desfazendo-as-coisas.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>14.</b>
-                        
-                        Desfazendo as coisas
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="15" data-path="chapters/pesquisando-em-um-arquivo.html">
-            
-                
-                    <a href="./chapters/pesquisando-em-um-arquivo.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>15.</b>
-                        
-                        Buscar texto dentro do arquivo
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="16" data-path="chapters/comandos-externos.html">
-            
-                
-                    <a href="./chapters/comandos-externos.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>16.</b>
-                        
-                        Executando comandos externos
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="17" data-path="chapters/salvando-ou-fechando-arquivos.html">
-            
-                
-                    <a href="./chapters/salvando-ou-fechando-arquivos.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>17.</b>
-                        
-                        Salvando e fechando arquivos
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="18" data-path="chapters/salvar-como.html">
-            
-                
-                    <a href="./chapters/salvar-como.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>18.</b>
-                        
-                        Salvar como...
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="19" data-path="chapters/edicao-de-texto-basica.html">
-            
-                
-                    <a href="./chapters/edicao-de-texto-basica.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>19.</b>
-                        
-                        Mais comandos de edição de texto
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="20" data-path="chapters/marcas.html">
-            
-                
-                    <a href="./chapters/marcas.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>20.</b>
-                        
-                        Criando Marcas
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="21" data-path="chapters/dobras-no-texto.html">
-            
-                
-                    <a href="./chapters/dobras-no-texto.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>21.</b>
-                        
-                        Criando Folders (ou dobras no texto)
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="22" data-path="chapters/personalize.html">
-            
-                
-                    <a href="./chapters/personalize.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>22.</b>
-                        
-                        Personalizando o Vim
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="23" data-path="chapters/salvar-preferencias-vim.html">
-            
-                
-                    <a href="./chapters/salvar-preferencias-vim.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>23.</b>
-                        
-                        Salvando suas preferências
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="24" data-path="chapters/criando-comandos-e-atalhos-personalizados.html">
-            
-                
-                    <a href="./chapters/criando-comandos-e-atalhos-personalizados.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>24.</b>
-                        
-                        Comandos e atalhos personalizados
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="25" data-path="chapters/mudando-o-tema.html">
-            
-                
-                    <a href="./chapters/mudando-o-tema.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>25.</b>
-                        
-                        Mudando o tema
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="26" data-path="chapters/temas-legais.html">
-            
-                
-                    <a href="./chapters/temas-legais.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>26.</b>
-                        
-                        Temas legais
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="27" data-path="chapters/adicionando-sintaxes.html">
-            
-                
-                    <a href="./chapters/adicionando-sintaxes.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>27.</b>
-                        
-                        Adicionando sintaxes
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="28" data-path="chapters/exemplos-de-vimrc.html">
-            
-                
-                    <a href="./chapters/exemplos-de-vimrc.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>28.</b>
-                        
-                        Exemplos de .vimrc
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="29" data-path="chapters/plugins.html">
-            
-                
-                    <a href="./chapters/plugins.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>29.</b>
-                        
-                        Plugins
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="30" data-path="chapters/instalando-os-plugins-com-vundle.html">
-            
-                
-                    <a href="./chapters/instalando-os-plugins-com-vundle.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>30.</b>
-                        
-                        Instalando plugins no Vim
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="31" data-path="chapters/pesquisando-por-plugins-no-vundle.html">
-            
-                
-                    <a href="./chapters/pesquisando-por-plugins-no-vundle.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>31.</b>
-                        
-                        Localizando plugins com o Vundle
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="32" data-path="chapters/removendo-plugins-com-vundle.html">
-            
-                
-                    <a href="./chapters/removendo-plugins-com-vundle.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>32.</b>
-                        
-                        Removendo plugins
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="33" data-path="chapters/atualizando-plugins.html">
-            
-                
-                    <a href="./chapters/atualizando-plugins.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>33.</b>
-                        
-                        Atualizando plugins
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="34" data-path="chapters/alguns-plugins-maneiros.html">
-            
-                
-                    <a href="./chapters/alguns-plugins-maneiros.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>34.</b>
-                        
-                        Alguns plugins maneiros
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="35" data-path="chapters/comandos-uteis-no-vimrc.html">
-            
-                
-                    <a href="./chapters/comandos-uteis-no-vimrc.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>35.</b>
-                        
-                        Comandos uteis no .Vimrc
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="36" data-path="chapters/windows.html">
-            
-                
-                    <a href="./chapters/windows.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>36.</b>
-                        
-                        Trabalhando em Janelas dentro do Vim
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="37" data-path="chapters/trabalhando-com-abas-no-vim.html">
-            
-                
-                    <a href="./chapters/trabalhando-com-abas-no-vim.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>37.</b>
-                        
-                        Trabalhando com abas
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="38" data-path="chapters/referencias-vim-para-noobs.html">
-            
-                
-                    <a href="./chapters/referencias-vim-para-noobs.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>38.</b>
-                        
-                        Referências
-                    </a>
-            
-            
-        </li>
-    
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, sans-serif;
+    }
 
+    a { color: inherit; }
+    button, input { font: inherit; }
 
-            
-            <li class="divider"></li>
-            <li>
-                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-                    Publicado com GitBook
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
-</div>
+    button, .button {
+      padding: 9px 12px;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      cursor: pointer;
+      text-decoration: none;
+    }
 
-    <div class="book-body">
-        <div class="body-inner">
-            <div class="book-header" role="navigation">
-    <!-- Actions Left -->
-    
+    button:hover, .button:hover { border-color: var(--accent); }
 
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >Vim para Noobs</a>
-    </h1>
-</div>
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
 
-            <div class="page-wrapper" tabindex="-1" role="main">
-                <div class="page-inner">
-                
-                
-                    <section class="normal" id="section-">
-                    
-                        <h1 id="dicas-de-vim-para-noobs">Dicas de VIM para Noobs</h1>
-<blockquote>
-<p>Sinta-se hackudo</p>
-</blockquote>
-<h2 id="introdu&#xE7;&#xE3;o">Introdu&#xE7;&#xE3;o</h2>
-<p><strong>O que &#xE9; VIM?</strong></p>
-<p>Se voc&#xEA; veio at&#xE9; aqui e nem mesmo sabe o que &#xE9; <a href="http://www.vim.org/" target="_blank">VIM</a>, da uma olhada <a href="http://aurelio.net/vim/vi-vim-venci.html" target="_blank">aqui</a> e, se quiser baixar um livro legal sobre o editor, olha <a href="https://code.google.com/p/vimbook/downloads/list" target="_blank">aqui</a>.</p>
-<p><strong>Por que usar VIM?</strong></p>
-<p>Pra se sentir <strong>Hackudo</strong>/<strong>Hackero</strong>/<strong>Hackerzaum</strong>/<strong>Monstro das programa&#xE7;aum</strong>/<strong>pra parecer Hacker de filme</strong>, etc</p>
-<p>Quem olhar voc&#xEA; digitando texto nessa tela:</p>
-<p><img src="images/vim-hackudo.gif" alt="VIM" title="Imagem do editor VIM com um arquivo aberto."></p>
-<p>Vai te achar um monstro das hackeragem, o pr&#xF3;prio <a href="https://en.wikipedia.org/wiki/Kevin_Mitnick" title="Kevin Mitnick, o Hackudo monstraum." target="_blank">Kevin Mitnick</a>.</p>
-<p>Eu decidi testar o VIM quando, em um <a href="meetup.com" title="Site meetup.com.">Meetup</a>, vi um cara escrever a seguinte linha de texto no Terminal:</p>
-<pre><code>sufocar cara_da_frente
-</code></pre><p>Pressionar um <code>ESC</code> e digitar <code>:wq</code> e o cara que estava sentado na frente dele come&#xE7;ou a ficar sem ar!</p>
-<p>Isso foi incr&#xED;vel cara.</p>
-<p>Me mostrou os poderes do lado negro da for&#xE7;a. Eu pensei: <em>&quot;Preciso de todo esse poder!&quot;</em></p>
-<p><strong>Brincadeira</strong></p>
-<p>Muita gente diz que usar o VIM &#xE9; mais produtivo do que outros editores como o Sublime (:heart:). Ent&#xE3;o eu resolvi testar e tirar minhas conclus&#xF5;es de com qual editor vou me dar melhor.</p>
-<p>Para facilitar o workflow criei esse book para deixar os comandos que mais utilizo, configura&#xE7;&#xF5;es legais, como instalar plugins, etc.</p>
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 12px 16px;
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+    }
 
-                    
-                    </section>
-                
-                
-                </div>
-            </div>
-        </div>
+    .brand { font-weight: 800; margin-right: auto; }
+    .brand span { color: var(--accent); }
 
-        
-        
-        <a href="./chapters/inicio.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Primeiros passos com o Vim"><i class="fa fa-angle-right"></i></a>
-        
+    .layout {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      min-height: calc(100vh - 60px);
+    }
+
+    aside {
+      padding: 18px;
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+    }
+
+    main {
+      min-width: 0;
+      max-width: 1000px;
+      padding: clamp(20px, 5vw, 54px);
+    }
+
+    .search {
+      display: block;
+      width: 100%;
+      margin-top: 8px;
+      padding: 11px;
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+    }
+
+    .toolbar, .filters, .pager {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 12px 0;
+    }
+
+    .chapter-list { list-style: none; padding: 0; }
+
+    .chapter-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      gap: 4px;
+      align-items: center;
+      margin: 5px 0;
+    }
+
+    .chapter-link {
+      min-width: 0;
+      padding: 8px;
+      border-radius: 7px;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .chapter-link:hover,
+    .chapter-link[aria-current="page"] {
+      background: var(--surface);
+    }
+
+    .chapter-link[aria-current="page"] {
+      border-left: 3px solid var(--accent);
+      font-weight: 700;
+    }
+
+    .small-button {
+      padding: 6px;
+      min-width: 35px;
+    }
+
+    .muted { color: var(--muted); }
+
+    .hero, .card {
+      padding: 22px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .progress-track {
+      height: 9px;
+      overflow: hidden;
+      background: var(--surface);
+      border-radius: 20px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background: var(--success);
+      transition: width .2s;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+
+    .card strong { display: block; font-size: 1.5rem; }
+
+    .notice {
+      margin: 20px 0;
+      padding: 14px;
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      border-radius: 5px;
+    }
+
+    code { background: var(--surface); padding: 3px 6px; }
+
+    mark { background: #fde047; color: #171717; }
+
+    .hidden { display: none !important; }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    #menuToggle { display: none; }
+
+    @media (max-width: 800px) {
+      .layout { grid-template-columns: 1fr; }
+      #menuToggle { display: inline-block; }
+
+      aside {
+        display: none;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      aside.open { display: block; }
+      main { padding: 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+
+<body>
+<header class="topbar">
+  <button id="menuToggle" aria-controls="sidebar"
+          aria-expanded="false">☰ Menu</button>
+
+  <a class="brand" id="homeLink" href="./index.html">
+    Vim para <span>Noobs</span>
+  </a>
+
+  <button id="themeToggle">Tema claro</button>
+  <button id="continueButton">Continuar leitura</button>
+</header>
+
+<div class="layout">
+  <aside id="sidebar" aria-label="Navegação do livro">
+    <label for="search"><strong>Buscar capítulos</strong></label>
+    <input class="search" id="search" type="search"
+           placeholder="Digite um título..." autocomplete="off">
+
+    <div class="filters">
+      <button data-filter="all">Todos</button>
+      <button data-filter="favorites">★ Favoritos</button>
+      <button data-filter="history">Histórico</button>
     </div>
+
+    <p id="searchStatus" class="muted" aria-live="polite"></p>
+
+    <h2>Progresso global</h2>
+    <div id="progressTrack" class="progress-track"
+         role="progressbar" aria-label="Páginas concluídas"
+         aria-valuemin="0" aria-valuemax="39" aria-valuenow="0">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <p id="progressText" class="muted">0 de 39 concluídas</p>
+
+    <ul id="chapterList" class="chapter-list"></ul>
+
+    <button id="resetProgress">Reiniciar progresso</button>
+  </aside>
+
+  <main id="mainContent" tabindex="-1">
+    <section class="hero">
+      <div class="eyebrow">Guia interativo</div>
+      <h1 id="pageTitle">Dicas de Vim para Noobs</h1>
+      <p class="muted">
+        Aprenda comandos, modos de operação, edição e personalização do Vim.
+      </p>
+
+      <div class="toolbar">
+        <button id="favoriteButton">☆ Favoritar página</button>
+        <button id="completeButton">✓ Marcar como concluída</button>
+      </div>
+    </section>
+
+    <section id="introContent">
+      <h2>Introdução</h2>
+      <p><strong>O que é Vim?</strong></p>
+      <p>
+        Vim é um editor de texto poderoso, conhecido pelos seus modos
+        de operação e pelos comandos de teclado para editar arquivos.
+      </p>
+
+      <h2>Primeiros comandos</h2>
+      <div class="notice">
+        <p><code>Esc</code> — voltar ao modo normal.</p>
+        <p><code>:w</code> — salvar o arquivo.</p>
+        <p><code>:q</code> — sair do editor.</p>
+        <p><code>:wq</code> — salvar e sair.</p>
+      </div>
+
+      <p>
+        Use o menu para abrir os capítulos do livro e registrar seu progresso.
+      </p>
+    </section>
+
+    <section class="cards" aria-label="Estatísticas">
+      <div class="card">
+        <span class="muted">Páginas concluídas</span>
+        <strong id="completedCount">0/39</strong>
+      </div>
+      <div class="card">
+        <span class="muted">Favoritos</span>
+        <strong id="favoriteCount">0</strong>
+      </div>
+      <div class="card">
+        <span class="muted">Páginas no histórico</span>
+        <strong id="historyCount">0</strong>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="Capítulo anterior e próximo">
+      <a id="previousLink" class="button hidden" href="#">← Anterior</a>
+      <a id="nextLink" class="button" href="./chapters/inicio.html">
+        Próximo →
+      </a>
+    </nav>
+
+    <footer>
+      Vim para Noobs PRO ULTRA · Preferências armazenadas neste navegador.
+    </footer>
+  </main>
 </div>
-
-        
-<script src="gitbook/app.js"></script>
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
-    
-
-    
-    <script src="gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
-    
-
-    
-    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
-    
-
-    
-    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
-    
-
-    
-    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
-    
-
-    
-    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
-    
 
 <script>
-require(["gitbook"], function(gitbook) {
-    var config = {"disqus":{"shortName":"woliveiras","useIdentifier":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
-    gitbook.start(config);
-});
-</script>
+"use strict";
 
-        
-    </body>
-    
+/*
+ * VIM PARA NOOBS PRO ULTRA
+ * Estado persistente, rotas, favoritos e progresso.
+ */
+
+const STORAGE_KEY = "vim-noobs-pro-ultra-v2";
+
+const chapters = [
+  ["intro", "Introdução", "index.html"],
+  ["inicio", "Primeiros passos com o Vim", "chapters/inicio.html"],
+  ["instalacao", "Instalando o Vim", "chapters/instalacao.html"],
+  ["modos", "Modos de operação", "chapters/modos.html"],
+  ["comandos", "Formando comandos", "chapters/comandos.html"],
+  ["abrindo", "Abrindo um arquivo", "chapters/abrindo-um-arquivo.html"],
+  ["alternando", "Alternando entre arquivos", "chapters/alternando-entre-arquivos.html"],
+  ["movendo", "Se movimentando pelo texto", "chapters/movendo-o-cursor.html"],
+  ["inserindo", "Inserindo texto", "chapters/inserindo-texto.html"],
+  ["deletando", "Deletando texto", "chapters/comandos-para-deletar.html"],
+  ["copiar", "Copiar e colar", "chapters/copiar-e-colar.html"],
+  ["recortar", "Recortar e colar", "chapters/recortar-e-colar.html"],
+  ["clipboard", "Copiar para o clipboard", "chapters/copiar-para-o-clipboard.html"],
+  ["replace", "Replace", "chapters/substituir-replace.html"],
+  ["desfazer", "Desfazendo as coisas", "chapters/desfazendo-as-coisas.html"],
+  ["pesquisa", "Buscar texto dentro do arquivo", "chapters/pesquisando-em-um-arquivo.html"],
+  ["externos", "Executando comandos externos", "chapters/comandos-externos.html"],
+  ["salvando", "Salvando e fechando arquivos", "chapters/salvando-ou-fechando-arquivos.html"],
+  ["salvar-como", "Salvar como...", "chapters/salvar-como.html"],
+  ["edicao", "Mais comandos de edição de texto", "chapters/edicao-de-texto-basica.html"],
+  ["marcas", "Criando Marcas", "chapters/marcas.html"],
+  ["dobras", "Criando Folders ou dobras no texto", "chapters/dobras-no-texto.html"],
+  ["personalizar", "Personalizando o Vim", "chapters/personalize.html"],
+  ["preferencias", "Salvando suas preferências", "chapters/salvar-preferencias-vim.html"],
+  ["atalhos", "Comandos e atalhos personalizados", "chapters/criando-comandos-e-atalhos-personalizados.html"],
+  ["tema", "Mudando o tema", "chapters/mudando-o-tema.html"],
+  ["temas", "Temas legais", "chapters/temas-legais.html"],
+  ["sintaxes", "Adicionando sintaxes", "chapters/adicionando-sintaxes.html"],
+  ["vimrc-exemplos", "Exemplos de .vimrc", "chapters/exemplos-de-vimrc.html"],
+  ["plugins", "Plugins", "chapters/plugins.html"],
+  ["instalar-plugins", "Instalando plugins no Vim", "chapters/instalando-os-plugins-com-vundle.html"],
+  ["buscar-plugins", "Localizando plugins com o Vundle", "chapters/pesquisando-por-plugins-no-vundle.html"],
+  ["remover-plugins", "Removendo plugins", "chapters/removendo-plugins-com-vundle.html"],
+  ["atualizar-plugins", "Atualizando plugins", "chapters/atualizando-plugins.html"],
+  ["plugins-legais", "Alguns plugins maneiros", "chapters/alguns-plugins-maneiros.html"],
+  ["vimrc-comandos", "Comandos úteis no .vimrc", "chapters/comandos-uteis-no-vimrc.html"],
+  ["janelas", "Trabalhando em Janelas dentro do Vim", "chapters/windows.html"],
+  ["abas", "Trabalhando com abas", "chapters/trabalhando-com-abas-no-vim.html"],
+  ["referencias", "Referências", "chapters/referencias-vim-para-noobs.html"]
+];
+
+const $ = id => document.getElementById(id);
+const validIds = new Set(chapters.map(ch => ch[0]));
+const validPaths = new Set(chapters.map(ch => ch[2]));
+
+function emptyState() {
+  return {
+    theme: "dark",
+    favorites: [],
+    completed: [],
+    history: [],
+    lastPath: "index.html"
+  };
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return emptyState();
+
+    const saved = JSON.parse(raw);
+    const defaults = emptyState();
+
+    return {
+      theme: saved.theme === "light" ? "light" : "dark",
+      favorites: Array.isArray(saved.favorites)
+        ? [...new Set(saved.favorites.filter(id => validIds.has(id)))]
+        : [],
+      completed: Array.isArray(saved.completed)
+        ? [...new Set(saved.completed.filter(id => validIds.has(id)))]
+        : [],
+      history: Array.isArray(saved.history)
+        ? [...new Set(saved.history.filter(path => validPaths.has(path)))]
+            .slice(0, 20)
+        : [],
+      lastPath: validPaths.has(saved.lastPath)
+        ? saved.lastPath : defaults.lastPath
+    };
+  } catch {
+    return emptyState();
+  }
+}
+
+let state = loadState();
+let activeFilter = "all";
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    return true;
+  } catch {
+    announce("Não foi possível salvar os dados neste navegador.");
+    return false;
+  }
+}
+
+function announce(message) {
+  $("searchStatus").textContent = message;
+}
+
+function appRoot() {
+  // Os arquivos dos capítulos estão dentro da pasta chapters/.
+  return /\/chapters\/[^/]+$/.test(location.pathname) ? "../" : "./";
+}
+
+function currentPath() {
+  const inChapter = /\/chapters\/([^/]+)$/.exec(location.pathname);
+
+  if (!inChapter) return "index.html";
+
+  const candidate = "chapters/" + inChapter[1];
+  const match = chapters.find(ch => ch[2] === candidate);
+  return match ? match[2] : "index.html";
+}
+
+function currentChapter() {
+  return chapters.find(ch => ch[2] === currentPath()) || chapters[0];
+}
+
+function route(path) {
+  return appRoot() + path;
+}
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
+
+function highlight(text, query) {
+  const index = text.toLocaleLowerCase("pt-BR")
+    .indexOf(query.toLocaleLowerCase("pt-BR"));
+
+  if (!query || index < 0) return escapeHTML(text);
+
+  return escapeHTML(text.slice(0, index)) +
+    "<mark>" +
+    escapeHTML(text.slice(index, index + query.length)) +
+    "</mark>" +
+    escapeHTML(text.slice(index + query.length));
+}
+
+function renderList() {
+  const query = $("search").value.trim();
+  const current = currentChapter();
+
+  const visible = chapters.filter(ch => {
+    if (!ch[1].toLocaleLowerCase("pt-BR")
+        .includes(query.toLocaleLowerCase("pt-BR"))) return false;
+
+    if (activeFilter === "favorites")
+      return state.favorites.includes(ch[0]);
+
+    if (activeFilter === "history")
+      return state.history.includes(ch[2]);
+
+    return true;
+  });
+
+  $("chapterList").innerHTML = visible.map(ch => {
+    const index = chapters.indexOf(ch);
+    const isFavorite = state.favorites.includes(ch[0]);
+    const isCompleted = state.completed.includes(ch[0]);
+    const isCurrent = current[0] === ch[0];
+
+    return `
+      <li class="chapter-item">
+        <a class="chapter-link"
+           href="${escapeHTML(route(ch[2]))}"
+           ${isCurrent ? 'aria-current="page"' : ""}>
+          ${ch[0] === "intro" ? "" : index + ". "}
+          ${highlight(ch[1], query)}
+          ${isCompleted ? '<span aria-label="Concluído"> ✓</span>' : ""}
+        </a>
+        <button class="small-button"
+          data-action="favorite" data-id="${ch[0]}"
+          aria-label="${isFavorite ? "Remover dos favoritos: " : "Favoritar: "}${escapeHTML(ch[1])}"
+          aria-pressed="${isFavorite}">
+          ${isFavorite ? "★" : "☆"}
+        </button>
+        <button class="small-button"
+          data-action="complete" data-id="${ch[0]}"
+          aria-label="${isCompleted ? "Desmarcar conclusão: " : "Marcar como concluído: "}${escapeHTML(ch[1])}"
+          aria-pressed="${isCompleted}">
+          ${isCompleted ? "✓" : "○"}
+        </button>
+      </li>`;
+  }).join("");
+
+  announce(`${visible.length} de ${chapters.length} páginas encontradas.`);
+  updateStats();
+}
+
+function updateStats() {
+  const total = chapters.length;
+  const done = state.completed.length;
+  const percent = Math.round(done / total * 100);
+
+  $("progressBar").style.width = percent + "%";
+  $("progressTrack").setAttribute("aria-valuenow", done);
+  $("progressText").textContent =
+    `${done} de ${total} páginas concluídas (${percent}%).`;
+
+  $("completedCount").textContent = `${done}/${total}`;
+  $("favoriteCount").textContent = state.favorites.length;
+  $("historyCount").textContent = state.history.length;
+
+  const id = currentChapter()[0];
+  const favorite = state.favorites.includes(id);
+  const completed = state.completed.includes(id);
+
+  $("favoriteButton").textContent = favorite
+    ? "★ Remover dos favoritos" : "☆ Favoritar página";
+
+  $("completeButton").textContent = completed
+    ? "↶ Desmarcar conclusão" : "✓ Marcar como concluída";
+
+  document.documentElement.dataset.theme = state.theme;
+  $("themeToggle").textContent = state.theme === "dark"
+    ? "☀️ Tema claro" : "🌙 Tema escuro";
+
+  $("themeToggle").setAttribute(
+    "aria-pressed", String(state.theme === "dark")
+  );
+
+  const pos = chapters.indexOf(currentChapter());
+  const previous = chapters[pos - 1];
+  const next = chapters[pos + 1];
+
+  $("previousLink").classList.toggle("hidden", !previous);
+  if (previous) {
+    $("previousLink").href = route(previous[2]);
+    $("previousLink").textContent = "← " + previous[1];
+  }
+
+  $("nextLink").classList.toggle("hidden", !next);
+  if (next) {
+    $("nextLink").href = route(next[2]);
+    $("nextLink").textContent = next[1] + " →";
+  }
+}
+
+function toggleState(list, id) {
+  state[list] = state[list].includes(id)
+    ? state[list].filter(item => item !== id)
+    : [...state[list], id];
+
+  saveState();
+  renderList();
+}
+
+function recordCurrentPage() {
+  const path = currentPath();
+
+  state.lastPath = path;
+  state.history = [
+    path,
+    ...state.history.filter(item => item !== path)
+  ].slice(0, 20);
+
+  saveState();
+}
+
+$("chapterList").addEventListener("click", event => {
+  const button = event.target.closest("button[data-action]");
+  if (!button) return;
+
+  const id = button.dataset.id;
+
+  if (button.dataset.action === "favorite")
+    toggleState("favorites", id);
+
+  if (button.dataset.action === "complete")
+    toggleState("completed", id);
+});
+
+$("search").addEventListener("input", renderList);
+
+document.querySelectorAll("[data-filter]").forEach(button => {
+  button.addEventListener("click", () => {
+    activeFilter = button.dataset.filter;
+    renderList();
+  });
+});
+
+$("favoriteButton").addEventListener("click", () => {
+  toggleState("favorites", currentChapter()[0]);
+});
+
+$("completeButton").addEventListener("click", () => {
+  toggleState("completed", currentChapter()[0]);
+});
+
+$("themeToggle").addEventListener("click", () => {
+  state.theme = state.theme === "dark" ? "light" : "dark";
+  saveState();
+  updateStats();
+});
+
+$("menuToggle").addEventListener("click", () => {
+  const open = $("sidebar").classList.toggle("open");
+  $("menuToggle").setAttribute("aria-expanded", String(open));
+});
+
+$("continueButton").addEventListener("click", () => {
+  if (state.lastPath !== currentPath()) {
+    location.href = route(state.lastPath);
+  } else {
+    $("sidebar").classList.add("open");
+    $("menuToggle").setAttribute("aria-expanded", "true");
+    $("search").focus();
+  }
+});
+
+$("resetProgress").addEventListener("click", () => {
+  if (!confirm("Apagar todas as páginas concluídas?")) return;
+
+  state.completed = [];
+  saveState();
+  renderList();
+});
+
+$("search").addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    $("search").value = "";
+    renderList();
+  }
+});
+
+document.addEventListener("keydown", event => {
+  const target = event.target;
+  const typing = target instanceof HTMLInputElement ||
+    target instanceof HTMLTextAreaElement ||
+    target.isContentEditable;
+
+  if (event.key === "/" && !typing) {
+    event.preventDefault();
+    $("search").focus();
+  }
+});
+
+$("homeLink").href = route("index.html");
+
+// A página inicial exibe a introdução.
+// Nos capítulos, o conteúdo original continua sendo responsabilidade
+// dos arquivos HTML correspondentes.
+if (currentChapter()[0] !== "intro") {
+  $("introContent").classList.add("hidden");
+  $("pageTitle").textContent = currentChapter()[1];
+}
+
+recordCurrentPage();
+renderList();
+</script>
+</body>
 </html>
